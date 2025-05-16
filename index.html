@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restricted Textarea</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Restricted Textarea</h1>
+    </header>
+    <div class="container">
+      <textarea
+        name="textarea"
+        id="input"
+        cols="30"
+        rows="10"
+        placeholder="Enter your text, max 5 lines and 100 characters."
+        maxlength="100"
+      ></textarea>
+    </div>
+    <div id="charCount">100 characters left</div>
+    <div id="lineInfo">0 / 5 lines used</div>
+  </body>
+  <script src="app.js"></script>
+</html>
